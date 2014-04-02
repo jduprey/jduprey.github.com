@@ -1,0 +1,178 @@
+---
+layout: post
+title: 'Test Post: Getting Time Machine to Work with Your NAS'
+categories: []
+tags:
+- google
+- posterous
+- test
+status: publish
+type: post
+published: true
+meta:
+  _original_post_id: ''
+  _original_import_author: John Duprey
+author: 
+---
+<blockquote class="posterous_short_quote">
+<p><em>This is a test post to see how posterous handles a google doc I wrote. I'm posting this via google docs' send document in email, "Paste the document into the email message".</em></p>
+</blockquote>
+<div style="padding-bottom:10px;"> ol { padding-left: 3em; font-weight: bold; } ol.writely-toc-subheading { padding-left: 1em; font-weight: normal; } /* IE6 only */ * html writely-toc ol { list-style-position: inside; } .writely-toc-none { list-style-type: none; } .writely-toc-decimal { list-style-type: decimal; } .writely-toc-upper-alpha { list-style-type: upper-alpha; } .writely-toc-lower-alpha { list-style-type: lower-alpha; } .writely-toc-upper-roman { list-style-type: upper-roman; } .writely-toc-lower-roman { list-style-type: lower-roman; } .writely-toc-disc { list-style-type: disc; } /* Ordered lists converted to numbered lists can preserve ordered types, and vice versa. This is confusing, so disallow it */ ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] { list-style-type: disc; } ol[type="disc"], ol[type="circle"], ol[type="square"] { list-style-type: decimal; } /* end default css */ /* default print css */ @media print { body { padding: 0; margin: 0; } div.google_header, div.google_footer { display: block; min-height: 0; border: none; } div.google_header { flow: static(header); } /* used to insert page numbers */ div.google_header::before, div.google_footer::before { position: absolute; top: 0; } div.google_footer { flow: static(footer); } /* always consider this element at the start of the doc */ div#google_footer { flow: static(footer, start); } span.google_pagenumber { content: counter(page); } span.google_pagecount { content: counter(pages); } callout.google_footnote { display: prince-footnote; footnote-style-position: inside; /* These styles keep the footnote from taking on the style of the text surrounding the footnote marker. They can be overridden in the document CSS. */ color: #000; font-family: Verdana; font-size: 10.0pt; font-weight: normal; } /* Table of contents */ #WritelyTableOfContents a::after { content: leader('.') target-counter(attr(href), page); } #WritelyTableOfContents a { text-decoration: none; color: black; } } @page { @top { content: flow(header); } @bottom { content: flow(footer); } @footnotes { border-top: solid black thin; padding-top: 8pt; } } /* end default print css */ /* custom css */ /* end custom css */ /* ui edited css */ body { font-family: Verdana; font-size: 10.0pt; line-height: normal; background-color: #ffffff; } /* end ui edited css */ /* editor CSS */ .editor a:visited {color: #551A8B} .editor table.zeroBorder {border: 1px dotted gray} .editor table.zeroBorder td {border: 1px dotted gray} .editor table.zeroBorder th {border: 1px dotted gray} .editor div.google_header, .editor div.google_footer { border: 2px #DDDDDD dashed; position: static; width: 100%; min-height: 2em; } .editor .misspell {background-color: yellow} .editor .writely-comment { font-size: 9pt; line-height: 1.4; padding: 1px; border: 1px dashed #C0C0C0 } /* end editor CSS */  --&gt;<br />
+<h1>Getting Time Machine to Work with Your NAS</h1>
+<p>Since the birth of our little girl, we have been obsessed with taking pictures and capturing video of family events, cute moments, and blackmail material for those later teenage years. &nbsp;All those pictures and videos take up space - as does the ever expanding and, mostly, legally acquired music and movie collections. &nbsp;External firewire/USB drives clutter my work area to accommodate our expanding digital collections. &nbsp;Of course we can and have kept sporadic back ups to DVD and CD and on a few rare occasions had to recover from that media due to hardware failures and careless mistakes. &nbsp;I even experimented with a few <a href="http://mozy.com" title="e.g. Mozy (in beta for Mac - VERY BETA)" target="_blank">online storage services</a>, but accessing Gigabytes of data takes time and, it seems, services for Macs are still nascent.</p>
+<p> This article describes how I finally established a painless backup solution for my home computers using OS X's <a href="http://www.apple.com/macosx/features/timemachine.html" title="Time Machine desribed on Apple's web site." target="_blank">Time Machine</a> and a <a href="http://en.wikipedia.org/wiki/Network_Attached_Storage" title="NAS described on wikipedia" target="_blank">network attached storage (NAS)</a> device - the <a href="http://www.netgear.com/Products/Storage/ReadyNASNVPlus.aspx" title="ReadyNAS NV+ Product Description (netgear.com)" target="_blank">ReadyNAS NV+</a>.&nbsp; Using Time Machine with Network Attached Storage (NAS) is disabled in OS X's Leopard (as of version 10.5.2) for anything <strong>but</strong> <a href="http://www.apple.com/timecapsule/" title="Time Capsule product description on Apple.com." target="_blank">Time Capsule</a>. &nbsp; However, it <em>can</em> be done without too much effort on your part.
+<p />  <strong>NOTE</strong>: <em>Since I wrote this, the ReadyNAS guys have come up with an official how-to: "</em><a href="http://www.readynas.com/?p=253" title="Permanent Link: Making Time Machine work with the ReadyNAS" rel="bookmark"><em>Making Time Machine work with the ReadyNAS</em></a><em>".&nbsp; You may still find these instructions useful.</em>
+<p />
+<div><em><strong><span style="font-style:normal;">NOTE</span></strong>: The latest ReadyNAS firmware now directly supports TimeMachine. &nbsp;Most of these steps are no longer needed! &nbsp;Read "<span style="font-style:normal;color:#444444;"><a href="http://www.readynas.com/?p=1097" title="Easy Time Machine Setup with the ReadyNAS"><span style="font-size:x-small;">Easy Time Machine Setup with the ReadyNAS</span></a><span style="color:#000000;font-family:Verdana, sans-serif;"><em><span style="font-size:x-small;">" for the details.</span></em></span></span></em></div>
+<div> <strong>NOTE</strong>:<em> See this <a href="http://docs.google.com/Doc?id=dft7hv9q_3dkmmzzcm" title="document in its original format"></a><a href="http://docs.google.com/Doc?id=dft7hv9q_3dkmmzzcm" title="document in its original format">document in its original format</a>.<br /> </em>
+<p></p>
+<h2><strong><span style="font-size:medium;">The Backup Thing</span></strong></h2>
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_ftvzb" height="194" src="http://getfile8.posterous.com/getfile/files.posterous.com/jduprey/wAxtxFEgqgGExuIafzIpozeucdthpvAiorwdgyCEDIExteoyElemrxdCiFwj/media_httpdocsgooglec_Ftvzb.jpg.scaled500.jpg" width="153" /></div>
+<p>Okay. &nbsp;We all know we are supposed to do it. &nbsp;Everyone tells you to do it before you try something silly like re-size your disk's partitions. &nbsp;But admit it, we don't do it nearly enough, if ever! &nbsp;Then it happens - tragedy! &nbsp;Your data gets lost/scrubbed/deleted/corrupted beyond all recognition. &nbsp;Literally, parts of your digital life are gone and are never to be seen or heard from again. &nbsp;</p>
+<p></p>
+<p>Kudos to Apple for recognizing an area that sorely needed some innovation.&nbsp; Time Machine is Apple's backup utility that makes backup as simple as flipping a switch. &nbsp;Simply plug in an external firewire/USB drive, turn Time Machine on and tell it to use that drive. &nbsp;All data will be transparently and reliably backed up to that drive.</p>
+<p></p>
+<p>If you haven't heard about <a href="http://www.apple.com/macosx/features/timemachine.html" title="About Time Machine..." target="_blank">Time Machine</a>, visit <a href="http://www.apple.com/macosx/features/timemachine.html" title="About Time Machine..." target="_blank">Apple's site for more information</a>.</p>
+<h2>The NAS Thing</h2>
+<p>&nbsp;</p>
+<p style="margin:0;">Network attached storage (NAS) is slowly becoming a solution for these types of storage problems because it provides centralized storage on your home's LAN. &nbsp;The space can be shared by multiple computers. &nbsp;These appliances tend to be much more energy efficient than desktop computers and optimized for file serving - unlike your current desktop which you may already<br />
+be using as a file server.</p>
+<h2>Doing the Backup Thing with the NAS Thing a la Time Machine</h2>
+<div>There are a number of NAS products available that range in quality, features, and price. &nbsp;Three you might consider are:</div>
+<div>
+<ul>
+<li> <a href="http://www.apple.com/timecapsule/" title="Time Capsule" target="_blank">Apple's Time Capsule</a> - supports Time Machine out of the box. &nbsp;If you go this route, you don't need this article! </li>
+<li> <a href="http://www.drobo.com/" title="Drobo.com" target="_blank">Drobo + Drobo Share</a> - A multi-drive solution that provides hot swapping of drives without the RAID techno-confusion. </li>
+<li> <a href="http://www.netgear.com/Products/Storage/ReadyNASNVPlus.aspx" title="ReadyNAS NV+" target="_blank">ReadyNAS NV+</a> - A four drive fully RAID compliant storage device, plus iTunes server, plus.. </li>
+<li> <a href="http://www.google.com/search?q=nas+soho+&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" title="Search: nas soho" target="_blank">Google it</a>. There are plenty more that fit this bill and I make no claim which solution would be right for you. </li>
+</ul>
+</div>
+<p />
+<div>I bought a 2 Terabyte (1.3 Terabyte of usable storage) ReadyNAS NV+. &nbsp;I fully expected to use it as a central storage solution for all the computers in our home. &nbsp;In particular, I looked forward to using it for Time Machine backups. &nbsp;Late in the beta phase of OS X Leopard, support for network storage devices was dropped from Time Machine. &nbsp;Understandably, there are some extra technical considerations when writing to network disks and Apple didn't want to hold up the Leopard release any more than it had already.&nbsp;
+<p />  Not so understandable is Apple's later Leopard update that supports <em>their</em> NAS, Time Capsule, but not others. &nbsp;Rather, I would have expected legalese informing me that using non-Apple certified hardware for network backup was not recommended even strongly discouraged. &nbsp;</div>
+<p />
+<div>That is the double edged sword of being an Apple consumer. &nbsp;<a href="http://www.youtube.com/watch?v=j17H_JzUEYg" title="Apple - by bad girlfriend." target="_blank">And yet I still love them</a>. &nbsp; (Well, <a href="http://www.microsoft.com/windows/products/windowsvista/default.aspx" title="Rock" target="_blank">consider</a> <a href="http://en.wikipedia.org/wiki/Luddite" title="and a" target="_blank">the</a> <a href="http://www.linux.org/" title="hard place." target="_blank">alternatives</a>.) &nbsp;This story has a silver lining. &nbsp;You can make Time Machine work with your NAS. The rest of this document, tells you how.</div>
+<h2>Making Time Machine Play Nice</h2>
+<p>&nbsp;</p>
+<p>Backups are supposed to be a sure thing so what I'm about to describe may not be such a good idea.&nbsp; The steps I'm about to describe are not support by Apple in anyway.&nbsp; I take no responsibility for anything you may do to your computer or what Time Machine may do to your back ups.</p>
+<p></p>
+<p style="text-align:center;"><strong>DO THIS AT YOUR OWN RISK.</strong></p>
+<p></p>
+<p>My own boiler plate legalese aside, I feel fairly confident with that this solution is producing reliable backups at least for my environment. &nbsp;I've only just starting using this solution so it is possible issues will arise down the road.</p>
+<p></p>
+<p>I can take no credit for figuring out these instructions. &nbsp;Everything I'm writing down here is what I have pulled from the <a href="http://www.readynas.com/forum/viewtopic.php?f=28&amp;t=15271&amp;st=0&amp;sk=t&amp;sd=a&amp;start=195" title="Old forum discussion." target="_blank">ReadyNAS discussion forums</a>.&nbsp; (Since I wrote this, the ReadyNAS guys have come up with an official how-to: "<a href="http://www.readynas.com/?p=253" title="Permanent Link: Making Time Machine work with the ReadyNAS" rel="bookmark">Making Time Machine work with the ReadyNAS</a>".&nbsp; You may still find these instructions useful.)&nbsp; I extend many thanks to those who worked out the technical issues and posted them there.</p>
+<p></p>
+<p>Lets get to business.</p>
+<p></p>
+<p>Requisites:</p>
+<p>&nbsp;</p>
+<ol>
+<li> A NAS that supports AFP or SMB, NFS? &nbsp;(I've only tested AFP) </li>
+<li> Mac OS X Leopard 10.5.2+ </li>
+<li> OS X admin privileges and the ability to use the terminal </li>
+</ol>
+<p>&nbsp;</p>
+<p>
+<p>General Steps</p>
+<p>&nbsp;</p>
+<ol>
+<li> Turn off Time Machine </li>
+<li> Enable Time Machine to work with unsupported network shares </li>
+<li> Create a disk image, called a sparsebundle, to hold your Time Machine backups </li>
+<li> If you are using ReadyNAS 4.0.1 and earlier and AFP, apply AFP update </li>
+<li> Put the sparsebundle on a share on your NAS </li>
+<li> Turn on Time Machine and choose the network share </li>
+</ol>
+<p>&nbsp;</p>
+<p></p>
+<h2>Turn Off Time Machine</h2>
+<p>First, turn off Time Machine, by choosing it in your System Preferences and sliding the controller to the off position.</p>
+<p></p>
+<p>
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_gaydb" height="392" src="http://getfile1.posterous.com/getfile/files.posterous.com/jduprey/zfunEDhdgqyuDhomJDbGxcbwrpfxGmglfwJsJEmAqqDwAbylHJojbxypphDB/media_httpdocsgooglec_GaydB.jpg.scaled500.jpg" width="467" /></div></p>
+<p>&nbsp;</p>
+<div>
+<div style="text-align:left;">
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_jghnb" height="310" src="http://jduprey.files.wordpress.com/2009/08/media_httpdocsgooglec_jghnb-scaled500.jpg?w=300" width="467" /></div>
+</div>
+<h2>Enable Time Machine to Work with Unsupported Network Shares</h2>
+<p>To get Time Machine to allow you to pick an unsupported network share as a target for storing backups, you must set a <em>secret</em> system property. &nbsp;Using the terminal run the following command:</p>
+<p></p>
+<blockquote><p><span style="font-family:Courier New;">defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1</span></p></blockquote>
+<p>You can verify that it is now set to '1', by reading the system property:</p>
+<div style="text-align:left;">
+<blockquote><span style="font-family:Courier New;">defaults read com.apple.systempreferences TMShowUnsupportedNetworkVolumes</span></p></blockquote>
+</div>
+<h2>Create a "sparsebundle"</h2>
+<div style="text-align:left;">A sparse what'le?&nbsp; A sparsebundle is a special kind of disk image - a virtual disk stored within a single file/directory of files. &nbsp;This image can grow in size and a maximum size can be set.&nbsp; We will take advantage of this max size to avoid filling up your entire NAS with backups.</div>
+<div style="text-align:left;">The disk image filename must be named specifically: computerName_MAC.sparsebundle where computerName is the name of your computer. &nbsp;You can find the name of your computer by looking at the "Computer Name:" field in the Sharing System Preferences.</div>
+<div>
+<div style="text-align:left;">
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_pjckn" height="102" src="http://jduprey.files.wordpress.com/2009/08/media_httpdocsgooglec_pjckn-scaled500.jpg?w=300" width="350" /></div>
+</div>
+<div style="text-align:left;">Or by executing this command in the terminal:<br />
+<blockquote><span style="font-family:Courier New;">thor:~ jduprey$ hostname | sed 's/[.].*//g'</span><br /> <span style="font-family:Courier New;">thor</span></p></blockquote>
+</div>
+<div>
+<div>MAC stands for the <a href="http://en.wikipedia.org/wiki/MAC_address" title="MAC Address">Media Access Control address</a>, without the colons, of your primary network card, en0.&nbsp; This can be found by running this command in the terminal:</div>
+<blockquote><p><span style="font-family:Courier New;">ifconfig en0 | grep ether | awk '{print $2}' | sed 's/://g'<br /> 0018f31587d1</span></p></blockquote>
+<p>So in this example computerName=<span style="font-family:Courier New;">thor</span> and MAC=<span style="font-family:Courier New;">0018f31587d1</span>.&nbsp;</p>
+<p></p>
+<p>Now you are ready to create the sparsebundle image. &nbsp;Decide how much space you want Time Machine to take up. &nbsp;This will be the maximum size of the sparsebundle. &nbsp;I chose 320 Gigabytes for mine, imageSize=<span style="font-family:Courier New;">320g</span>. &nbsp;One rule of thumb is to use 110% of your actual disk capacity. &nbsp;Another might be to use 150% of the actual data on &nbsp;your drive. &nbsp;Basically, it will need to be big enough to hold all the data you want to back up plus how much history you want it to keep about past files.</p>
+<p></p>
+<p>Execute the following command ALL on ONE line with YOUR image size computerName and MAC in :</p>
+<blockquote><p><span style="font-family:Courier New;">hdiutil create -size <strong>imageSize</strong>&nbsp;-type SPARSEBUNDLE -nospotlight -volname "Backup of <strong>computerName</strong>" -fs "Case-sensitive Journaled HFS+" -verbose ~/Desktop/<strong>computerName</strong>_<strong>MAC</strong>.sparsebundle</span></p></blockquote>
+<p>&nbsp;</p>
+<p>e.g.</p>
+<blockquote><p><span style="font-family:Courier New;">hdiutil create -size 320g -type SPARSEBUNDLE -nospotlight -volname "Backup of thor" -fs "Case-sensitive Journaled HFS+" -verbose ~/Desktop/thor_0018f31587d1.sparsebundle</span></p></blockquote>
+<div>You will notice that the image is much smaller than the max size. &nbsp;It will grow as necessary:</div>
+<div>
+<blockquote>du -hs ~/Desktop/thor_0018f31587d1.sparsebundle<br /> <span><strong>160M</strong></span> <span>/Users/jduprey/Desktop/thor_0018f31587d1.sparsebundle</span></p></blockquote>
+</div>
+<h2>Apply ReadyNas AFP Update (If Applicable)</h2>
+<p>If you are using a ReadyNAS product with RAIDiator version 4.01c1-p1 or earlier a<span style="color:#333333;"><span style="color:#000000;"><span style="font-size:x-small;">nd AFP shares, you may need to patch the AFP software.&nbsp; I noticed that the sparsebundle when copied to the share appeared as a regular folder which didn't leave me with a good feeling that all was well.</span></span></span></p>
+<p></p>
+<p>Grab the patch from <a href="http://www.readynas.com/" title="http://www.readynas.com"></a>http://www.readynas.com/. &nbsp;The 4.01 patch can be found here:</p>
+<p style="text-align:center;"><a href="http://www.readynas.com/?page_id=94" title="http://www.readynas.com/?page_id=94" target="_blank">http://www.readynas.com/?page_id=94</a></p>
+<p>Look for "Update_AFP_Support".&nbsp; Perform a local update and reboot the NAS when you are done.</p>
+</div>
+</div>
+<p>&nbsp;</p>
+<div style="text-align:left;">
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_sagnc" height="318" src="http://getfile4.posterous.com/getfile/files.posterous.com/jduprey/oCvBIbGqjpeGckmkeydjdbevcBikDAtHFFbAnygisIAeBakhmpgfGhHFqbHm/media_httpdocsgooglec_saGnC.jpg.scaled500.jpg" width="371" /></div>
+</div>
+<p>&nbsp;</p>
+<p></p>
+<h2>Copy Sparsebundle to Your Backup Share</h2>
+<p>Connect your computer to the share in the standard Leopard way. &nbsp;Make sure you are connected as the appropriate user and that your backup share has the appropriate permissions so that there will be no problems accessing the image through Time Machine.</p>
+<p></p>
+<p>&nbsp;</p>
+<div style="text-align:left;">
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_fioal" height="144" src="http://jduprey.files.wordpress.com/2009/08/media_httpdocsgooglec_fioal-scaled500.jpg?w=300" width="304" /></div>
+</div>
+<div style="text-align:left;">Ensure the copy worked by double clicking the image on the backup share and ensure that the image is mounted. &nbsp;The contents will be empty at this point. &nbsp;Eject/unmount the image and move on to the next step. &nbsp;</div>
+<p />
+<p>&nbsp;</p>
+<h2>Turn On Time Machine and Choose the Network Share</h2>
+<p>Its show time! &nbsp;Turn on Time Machine in the System Preferences and choose your backup network share by clicking the "Change Disk" button.</p>
+<h2></h2>
+<div>
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_znboi" height="310" src="http://jduprey.files.wordpress.com/2009/08/media_httpdocsgooglec_znboi-scaled500.jpg?w=300" width="467" /></div>
+</div>
+<div>
+<div>
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_cvana" height="310" src="http://jduprey.files.wordpress.com/2009/08/media_httpdocsgooglec_cvana-scaled500.jpg?w=300" width="467" /></div>
+<p></div>
+<p><span style="font-size:x-small;">You can wait for Time Machine to start backing up or tell it to start now by using the menu bar option.</span></p>
+<p></p>
+<div>
+<div class='p_embed p_image_embed'><img alt="Media_httpdocsgooglec_giayb" height="92" src="http://jduprey.files.wordpress.com/2009/08/media_httpdocsgooglec_giayb-scaled500.jpg?w=298" width="298" /></div></p>
+</div>
+<p><span style="font-size:x-small;">Your first backup will likely take a long while. &nbsp;Verify that Time Machine is writing to your sparsebundle and has not created one of its own.&nbsp; If it creates its own, proper maximum size limits may not be placed on the bundle leading to problems.</span></p>
+</div>
+</div>
+<h2>Conclusion</h2>
+<p>Hopefully these steps have you taking full advantage of Time Machine and your NAS investment.&nbsp; If you still have questions about setting this up, I recommend that you post them to the <a href="http://www.readynas.com/forum/viewtopic.php?f=28&amp;t=17890" title="Time Machine discussion thread">ReadyNAS Time Machine discussion thread</a> (or your own NAS's support forums) or applicable Apple howto sites.&nbsp; All that I know was extracted from the original discussion thread from ReadyNAS.&nbsp; This article attempted to put that information into context.
+<p />
+<p /> </div>
+<p></div>

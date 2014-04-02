@@ -1,0 +1,22 @@
+---
+layout: post
+title: Oracle JDK7 Mac OS X Port Developer Preview Release ??? Java.net
+categories: []
+tags:
+- dev
+- geek
+- java
+- java7
+- maven
+status: publish
+type: post
+published: true
+meta:
+  _original_post_id: ''
+  _original_import_author: John Duprey
+author: 
+---
+<div class="posterous_bookmarklet_entry">
+<div class="posterous_quote_citation">Check out this website I found at <a href="http://jdk7.java.net/macportpreview/">jdk7.java.net</a></div>
+<p>All I can say is "About Time"!  In my minimal testing, it seems to work.  I tested on OS X (10.6.8).  I found that with Maven 3.02 setting JAVA_HOME was not enough.  I think there may be a bug in the mvn script with paths that have spaces in them?  After looking at the script, I found that setting JAVACMD="$JAVA_HOME"/bin/java that maven then worked as expected.</p>
+</div>
