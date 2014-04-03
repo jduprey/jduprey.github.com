@@ -29,6 +29,9 @@ production_url : http://jduprey.github.io
 
 paginate: 5
 
+# Use redcarpet HTML parser - it is HTML5 based https://github.com/jekyll/jekyll/issues/1261
+markdown: redcarpet
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
