@@ -1,9 +1,12 @@
 ---
 layout: page
 title: "About"
-description: "About This Site"
+description: "About This Site and John Duprey"
 ---
 {% include JB/setup %}
 
+This site contains content authored by John Duprey.  He is currently 
+testing the static blogging waters using [JekyllBootstrap](http://jekyllbootstrap.com/).
 
-This site is testing the static blogging waters using JekyllBootstrap.
+<script src="//about.me/embed/jduprey?style=site"></script>
+-- [http://about.me/jduprey](http://about.me/jduprey)
