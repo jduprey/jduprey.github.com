@@ -2,14 +2,16 @@
 layout: post
 title: "Code.org: What Most Schools Don't Teach, Short Film"
 description: ""
-category: 
+category:
 tags: ["python", "learning"]
 ---
 {% include JB/setup %}
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/dU1xS07N-FA" frameborder="0" allowfullscreen></iframe>
 
-via [http://www.code.org](http://www.code.org) 
+via [http://www.code.org](http://www.code.org)
+
+
 
 I've been helping out with a [Thomson Reuter](http://www.thomsonreuters.com)'s Youth Programming class (in Rochester NY)﻿ which is just finishing up its first session in which we taught ~10 12-14 year olds some basic programming using python﻿.  I love making software - the collaborative process, the joining of ideas, the realization through code.  I'd like to see the next generation of kids get a head start w/ making software, especially my own kid.  
 
