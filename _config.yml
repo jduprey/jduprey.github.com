@@ -1,7 +1,5 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title
-
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
@@ -27,10 +25,18 @@ author :
 #
 production_url : http://jduprey.github.io
 
+timezone: America/New_York
+encoding: utf-8
+permalink: /blog/:categories/:year/:month/:day/:title
 paginate: 5
+paginate_path: "blog/page:num"
+excerpt_separator: "\n\n"
 
 # Use redcarpet HTML parser - it is HTML5 based https://github.com/jekyll/jekyll/issues/1261
-markdown: redcarpet
+#markdown: redcarpet
+markdown:      kramdown
+kramdown:
+  input: GFM
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
